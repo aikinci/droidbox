@@ -11,7 +11,7 @@ This is a ready to run Android sandbox enabling the user to run a dynamic analys
 
 Usage: 
 
-    docker run -it --rm -v ~/samples:/samples riker2000/droidbox filename.apk [duration in seconds]
+    sudo docker run -it --rm -v ~/samples:/samples riker2000/droidbox /samples/filename.apk [duration in seconds]
 
 VNC access:
 
