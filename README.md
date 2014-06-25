@@ -9,7 +9,16 @@ Usage:
 
     docker run -it --rm -v ~/samples:/samples riker2000/droidbox filename.apk [duration in seconds]
 
-Note: This instance comes with a preinstalled VNC server allowing you to view and modify the emulator during the run. You have to forward the VNC port to your local host in order to connect you VNC client.
+VNC access:
+
+This instance comes with a preinstalled VNC server allowing you to view and modify the emulator during the run. You have to forward the VNC port to your local host in order to connect you VNC client.
 
     ssh -L 5900:localhost:5900 root@$(cat ~/samples/ip.txt)
 
+ADB access:
+
+You can also forward Port 5554 and 5555 to connect to the emulator and use adb for further instrumentation and analysis.
+
+    ssh -L 5556:localhost:5554 -L 5557:localhost:5555 root@$(cat ~/samples/ip.txt)
+    adb kill-server
+    adb shell
