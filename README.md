@@ -7,7 +7,7 @@ Get it from the [Docker Hub][2]
 
 Sourcecode is on [GitHub][3]
 
-This is a ready to run Android sandbox enabling the user to run a dynamic analysis on an apk file.
+This is a ready to run Android sandbox enabling the user to run a dynamic analysis on an apk file. Create a ~/samples directory and copy you sample file in it. 
 
 Usage: 
 
@@ -15,7 +15,7 @@ Usage:
 
 VNC access:
 
-This instance comes with a preinstalled VNC server allowing you to view and modify the emulator during the run. You have to forward the VNC port to your local host in order to connect you VNC client.
+This instance comes with a preinstalled VNC server allowing you to view and modify the emulator during the run. You have to forward the VNC port to your local host in order to connect you VNC client. SSH password is "droidbox"
 
     ssh -L 5900:localhost:5900 root@$(cat ~/samples/ip.txt)
 
