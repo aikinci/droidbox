@@ -1,9 +1,11 @@
 droidbox
 ========
 
-A dockerized DroidBox https://code.google.com/p/droidbox/ instance. 
-Get it from the Docker Hub https://registry.hub.docker.com/u/riker2000/droidbox/
-Sourcecode is on GitHub https://github.com/aikinci/droidbox
+A dockerized [DroidBox][1] instance
+
+Get it from the [Docker Hub][2] 
+
+Sourcecode is on [GitHub][3]
 
 This is a ready to run Android sandbox enabling the user to run a dynamic analysis on an apk file.
 
@@ -24,3 +26,8 @@ You can also forward Port 5554 and 5555 to connect to the emulator and use adb f
     ssh -L 5556:localhost:5554 -L 5557:localhost:5555 root@$(cat ~/samples/ip.txt)
     adb kill-server
     adb shell
+
+
+  [1]: https://code.google.com/p/droidbox/
+  [2]: https://registry.hub.docker.com/u/riker2000/droidbox/
+  [3]: https://github.com/aikinci/droidbox
