@@ -26,6 +26,7 @@ RUN tar xfz DroidBox411RC.tar.gz
 
 RUN rm -f android-sdk_r22.6.2-linux.tgz DroidBox411RC.tar.gz
 
+# accept-licenses was taken from https://github.com/embarkmobile/android-sdk-installer and is Licensed under the MIT License.
 ADD accept-licenses /build/
 RUN expect /build/accept-licenses "android update sdk --no-ui --all --filter platform-tool,system-image,android-16" "android-sdk-license-bcbbd656"
 RUN echo "\n"| android create avd -n droidbox -t 1 -d 2
