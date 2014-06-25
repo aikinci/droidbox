@@ -1,6 +1,7 @@
-# Taken from https://github.com/embarkmobile/android-sdk-installer
-# Licensed under MIT license from http://embarkmobile.com
 #!/usr/bin/expect -f
+# Copyright (c) 2013 Embark Mobile
+# Licensed under the MIT License.
+# https://github.com/embarkmobile/android-sdk-installer
 
 # Usage example:
 #  ./accept-licenses "android update sdk --no-ui --all --filter build-tools" "android-sdk-license-bcbbd656|intel-android-sysimage-license-1ea702d1"
