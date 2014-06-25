@@ -1,7 +1,9 @@
 droidbox
 ========
 
-A dockerized DroidBox https://code.google.com/p/droidbox/ instance.
+A dockerized DroidBox https://code.google.com/p/droidbox/ instance. 
+Get it from the Docker Hub https://registry.hub.docker.com/u/riker2000/droidbox/
+Sourcecode is on GitHub https://github.com/aikinci/droidbox
 
 This is a ready to run Android sandbox enabling the user to run a dynamic analysis on an apk file.
 
