@@ -1,4 +1,6 @@
-FROM ubuntu:latest
+# https://github.com/aikinci/droidbox
+# A docerized Droidbox instance
+FROM ubuntu:14.04
 MAINTAINER ali@ikinci.info
 
 WORKDIR /opt
