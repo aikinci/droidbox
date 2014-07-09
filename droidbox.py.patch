@@ -1,0 +1,11 @@
+--- trunk/droidbox4.1.1/scripts/droidbox.py
++++ trunk/droidbox4.1.1/scripts/droidbox.py
+@@ -507,6 +507,8 @@
+ 	output["apkName"] = apkName
+ 
+ 	print(json.dumps(output))
++with open("analysis.json","w") as jsonfile
++  jsonfile.write(json.dumps(output))
+ 	sys.exit(0)
+ 
+ if __name__ == "__main__":
