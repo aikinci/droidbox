@@ -33,7 +33,7 @@ RUN echo "\n"| android create avd -n droidbox -t 1 -d 2
 
 # ssh setup
 RUN sed  's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/sshd_config  -i
-RUN echo "root:$ROOTPASSWORD" | chpasswd
+RUN echo "root:$ROOTPASSWORD" | chpasswd ; echo
 
 RUN apt-get install -y --no-install-recommends patch
 
