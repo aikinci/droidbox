@@ -28,6 +28,8 @@ You can also forward Port 5554 and 5555 to connect to the emulator and use adb f
     adb shell
 
 
+Check out a sample screencast here https://asciinema.org/a/11019
+
   [1]: https://code.google.com/p/droidbox/
   [2]: https://registry.hub.docker.com/u/riker2000/droidbox/
   [3]: https://github.com/aikinci/droidbox
