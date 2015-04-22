@@ -37,12 +37,12 @@ RUN sed  's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/ssh
 
 # fastdroid-vnc was taken from https://code.google.com/p/fastdroid-vnc/ it is GPLv2 licensed
 ADD fastdroid-vnc /build/
-ADD install-fastdroid-vnc /build/
-RUN /build/install-fastdroid-vnc
-ADD run /build/
+ADD install-fastdroid-vnc.sh /build/
+RUN /build/install-fastdroid-vnc.sh
+ADD run.sh /build/
 ADD droidbox.py.patch /build/
 RUN cd /opt/DroidBox_4.1.1/scripts && patch < /build/droidbox.py.patch
 
 CMD ["NONE"]
 
-ENTRYPOINT ["/build/run"]
+ENTRYPOINT ["/build/run.sh"]
