@@ -9,7 +9,11 @@ Sourcecode is on [Ali Ikinci's GitHub][3]
 
 This is a ready to run Android sandbox enabling the user to run a dynamic analysis on an apk file. Create a ~/samples directory and copy you sample file in it. 
 
-Usage: 
+Usage: With readonly sample protection (recomended)
+
+    sudo docker run -it --rm -v ~/samples:/samples:ro -v ~/samples/out:/samples/out honeynet/droidbox /samples/filename.apk [duration in seconds]
+
+Usage: Without readonly sample protection
 
     sudo docker run -it --rm -v ~/samples:/samples honeynet/droidbox /samples/filename.apk [duration in seconds]
 

@@ -4,7 +4,7 @@
  	output["apkName"] = apkName
  
  	print(json.dumps(output))
-+	with open("/samples/analysis.json","w") as jsonfile:
++	with open("/samples/out/analysis.json","w") as jsonfile:
 +  	     jsonfile.write(json.dumps(output,sort_keys=True, indent=4))
  	sys.exit(0)
  
