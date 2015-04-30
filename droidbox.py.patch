@@ -5,7 +5,7 @@
  
  	print(json.dumps(output))
 +	with open("/samples/out/analysis.json","w") as jsonfile:
-+  	     jsonfile.write(json.dumps(output,sort_keys=True, indent=4))
++	    jsonfile.write(json.dumps(output,sort_keys=True, indent=4))
  	sys.exit(0)
  
  if __name__ == "__main__":
