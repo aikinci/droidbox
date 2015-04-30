@@ -34,6 +34,10 @@ You can also forward Port 5554 and 5555 to connect to the emulator and use adb f
 
 Check out a sample screencast here https://asciinema.org/a/11019
 
+Additional features:
+
+* Takes a screenshot every 5 seconds
+
   [1]: https://code.google.com/p/droidbox/
   [2]: https://registry.hub.docker.com/u/honeynet/droidbox/
   [3]: https://github.com/aikinci/droidbox
