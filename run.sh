@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ "$1" = "NONE" ]; then
-    echo "Usage: sudo docker run -it --rm -v ~/samples:/samples:ro -v ~/samples/out/:/samples/out hannol/droidbox /samples/filename.apk [duration in seconds]"
+    echo "Usage: sudo docker run -it --rm -v ~/samples:/samples:ro -v ~/samples/out/:/samples/out honeynet/droidbox /samples/filename.apk [duration in seconds]"
     exit 1
 fi
 echo -e "\e[1;32;40mDroidbox Docker starting\nWaiting for the emulator to startup..."
