@@ -33,7 +33,7 @@ RUN expect /build/accept-licenses "android update sdk --no-ui --all --filter pla
 
 # ssh setup
 RUN sed  's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/sshd_config -i && \
-    echo "root:$ROOTPASSWORD" | chpasswd ; echo
+    echo "root:$ROOTPASSWORD" | chpasswd ;
 
 # fastdroid-vnc was taken from https://code.google.com/p/fastdroid-vnc/ it is GPLv2 licensed
 ADD fastdroid-vnc /build/
