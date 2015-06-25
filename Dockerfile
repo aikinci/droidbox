@@ -18,7 +18,7 @@ RUN dpkg --add-architecture i386 && \
     apt-get -y dist-upgrade && \
     apt-get install -y --no-install-recommends openjdk-7-jdk apt-utils curl expect python-tk python-matplotlib nano git openssh-server telnet libc6:i386 libncurses5:i386 libstdc++6:i386 bsdmainutils patch
 
-RUN curl -O http://dl.google.com/android/android-sdk_r23.0.2-linux.tgz && \
+RUN curl -O http://dl.google.com/android/android-sdk_r24.3.3-linux.tgz && \
     tar xfz android-sdk_r23.0.2-linux.tgz && \
     rm -f android-sdk_r23.0.2-linux.tgz
 
