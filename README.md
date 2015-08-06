@@ -31,8 +31,9 @@ You can also forward Port 5554 and 5555 to connect to the emulator and use adb f
     adb kill-server
     adb shell
 
+Check out a sample screencast:
 
-Check out a sample screencast here https://asciinema.org/a/11019
+[![asciicast](https://asciinema.org/a/11019.png)](https://asciinema.org/a/11019)
 
 Additional features:
 
