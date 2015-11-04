@@ -40,5 +40,5 @@ Additional features:
 * Takes a screenshot every 5 seconds
 
   [1]: https://code.google.com/p/droidbox/
-  [2]: https://registry.hub.docker.com/u/honeynet/droidbox/
+  [2]: https://hub.docker.com/r/honeynet/droidbox/
   [3]: https://github.com/aikinci/droidbox
