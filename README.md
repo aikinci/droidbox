@@ -3,19 +3,19 @@ droidbox
 
 A dockerized [DroidBox][1] instance
 
-Get it from the [Honeynet Project's Docker Repository][2] 
+Get it from the [Honeynet Project's Docker Repository][2]
 
 Sourcecode is on [Ali Ikinci's GitHub][3]
 
-This is a ready to run Android sandbox enabling the user to run a dynamic analysis on an apk file. Create a ~/samples directory and copy you sample file in it. 
+This is a ready to run Android sandbox enabling the user to run a dynamic analysis on an apk file. Create a ~/samples directory and copy you sample file in it.
 
 Usage: With readonly sample protection (recomended)
 
-    sudo docker run -it --rm -v ~/samples:/samples:ro -v ~/samples/out:/samples/out honeynet/droidbox /samples/filename.apk [duration in seconds]
+    docker run -it --rm -v ~/samples:/samples:ro -v ~/samples/out:/samples/out honeynet/droidbox /samples/filename.apk [duration in seconds]
 
 Usage: Without readonly sample protection
 
-    sudo docker run -it --rm -v ~/samples:/samples honeynet/droidbox /samples/filename.apk [duration in seconds]
+    docker run -it --rm -v ~/samples:/samples honeynet/droidbox /samples/filename.apk [duration in seconds]
 
 VNC access:
 
@@ -39,6 +39,6 @@ Additional features:
 
 * Takes a screenshot every 5 seconds
 
-  [1]: https://code.google.com/p/droidbox/
+  [1]: https://github.com/pjlantz/droidbox
   [2]: https://hub.docker.com/r/honeynet/droidbox/
   [3]: https://github.com/aikinci/droidbox
