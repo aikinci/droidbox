@@ -1,6 +1,6 @@
 # https://github.com/aikinci/droidbox
 # A dockerized Droidbox instance
-FROM ubuntu:14.04
+FROM ubuntu:latest
 MAINTAINER ali@ikinci.info
 
 WORKDIR /opt
