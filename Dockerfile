@@ -12,8 +12,6 @@ ENV ANDROID_HOME /opt/android-sdk-linux
 ENV ANDROID_SDK_HOME /opt/android-sdk-linux
 ENV PATH ${PATH}:$JAVA_HOME/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 ENV ROOTPASSWORD droidbox
-# accept-licenses was taken from https://github.com/embarkmobile/android-sdk-installer and is Licensed under the MIT License.
-ADD accept-licenses /build/
 # fastdroid-vnc was taken from https://code.google.com/p/fastdroid-vnc/ it is GPLv2 licensed
 ADD fastdroid-vnc /build/
 ADD install-fastdroid-vnc.sh /build/
