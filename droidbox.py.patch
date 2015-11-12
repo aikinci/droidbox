@@ -6,8 +6,8 @@
  	#Collect DroidBox logs
 +        lastScreenshot = 0
  	while 1:
-+            if (time.time() - lastScreenshot) >=5:
-+                #Take Screenshots every 5 seconds.
++            if (time.time() - lastScreenshot) >=3:
++                #Take Screenshots every 3 seconds.
 +                os.system("adb shell screencap -p | sed 's/\r$//' > /samples/out/screen_$(date +%Y-%m-%d_%H%M%S).png")
 +                lastScreenshot = time.time()
  	    try:

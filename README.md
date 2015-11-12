@@ -37,7 +37,7 @@ Check out a sample screencast:
 
 Additional features:
 
-* Takes a screenshot every 5 seconds
+* Takes a screenshot every 3 seconds
 
   [1]: https://github.com/pjlantz/droidbox
   [2]: https://hub.docker.com/r/honeynet/droidbox/
