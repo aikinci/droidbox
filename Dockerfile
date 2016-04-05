@@ -49,6 +49,8 @@ RUN dpkg --add-architecture i386 && \
     apt-get -y autoremove && \
     dpkg -l |grep ^rc |awk '{print $2}' |xargs dpkg --purge
 
+EXPOSE 5900
+
 CMD ["NONE"]
 
 ENTRYPOINT ["/build/run.sh"]
